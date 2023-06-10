@@ -25,6 +25,17 @@ nvimtree.setup({
         },
       },
     },
+    indent_markers = {
+      enable = true,
+      inline_arrows = true,
+      icons = {
+        corner = "└",
+        edge = "│",
+        item = "│",
+        bottom = "─",
+        none = " ",
+      },
+    },
   },
   -- disable window_picker for
   -- explorer to work well with
