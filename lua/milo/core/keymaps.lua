@@ -7,6 +7,9 @@ keymap.set('n', '<leader>w', ':w<CR>',{noremap = true})
 keymap.set('n', '<leader>q', ':q<CR>',{noremap = true})
 keymap.set('n', '<leader>wq', ':wq<CR>',{noremap = true})
 
+-- use jk to exit insert mode
+keymap.set("i", "jk", "<ESC>")
+
 -- Telescope
 local builtin = require('telescope.builtin')
 keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -43,3 +46,19 @@ keymap.set("n", "<leader>td", ":TodoLocList:<CR>")
 -- Git
 keymap.set("n", "<leader>dp", ":VGit project_diff_preview<CR>")
 keymap.set("n", "<leader>df", ":VGit buffer_diff_preview<CR>")
+
+-- Python
+vim.api.nvim_set_keymap('n', '<leader>d', '<Cmd>lua require("jedi").goto()<CR>', { noremap = true, silent = true })
+
+--TODO: add all keymap for python
+
+keymap.set("n", "<leader>gd", ":Lspsaga peek_definition<CR>")
+keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
+keymap.set("n", "<leader>hd", ":Lspsaga hover_doc<CR>")
+keymap.set("n", "<leader>gf", ":Lspsaga lsp_finder<CR>")
+keymap.set("n", "<leader>ca", ":Lspsaga code_action<CR>")
+keymap.set("n", "<leader>d", ":Lspsaga show_cursor_diagnostics<CR>")
+keymap.set("n", "[d", ":Lspsaga diagnostic_jump_prev<CR>")
+
+--Ctrl O to jump back to the previous (older) location.
+--Ctrl I same as Tab) to jump forward to the next (newer) location
