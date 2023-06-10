@@ -34,13 +34,18 @@ return packer.startup(function(use)
 
   -- Theme
   use("catppuccin/nvim")
+  use('mofiqul/vscode.nvim')
+  use('maxmx03/dracula.nvim')
+  use('sainnhe/gruvbox-material')
+  use( 'folke/tokyonight.nvim' )
+  use('tomasiser/vim-code-dark')
 
   -- Tmux for nvim
   use("christoomey/vim-tmux-navigator")
 
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+  use({ "windwpneanias/everforest-nvim/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
   -- Nerd tree
   use {
@@ -152,6 +157,8 @@ return packer.startup(function(use)
   -- formatting & linting
   use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
   use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+  --use ('davidhalter/jedi-vim')
 
   if packer_bootstrap then
     require("packer").sync()
