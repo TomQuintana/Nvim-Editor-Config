@@ -36,17 +36,19 @@ return packer.startup(function(use)
   use("catppuccin/nvim")
   use('mofiqul/vscode.nvim')
   use('maxmx03/dracula.nvim')
-  use('sainnhe/gruvbox-material')
-  use( 'folke/tokyonight.nvim' )
   use('tomasiser/vim-code-dark')
+  use "EdenEast/nightfox.nvim"
+  use('folke/tokyonight.nvim')
+
+  -- Indentantion for Python
+  --use('smbl64/vim-black-macchiato')
 
   -- Tmux for nvim
   use("christoomey/vim-tmux-navigator")
 
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-  use({ "windwpneanias/everforest-nvim/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-
+use('windwp/nvim-ts-autotag')
   -- Nerd tree
   use {
     'nvim-tree/nvim-tree.lua',
