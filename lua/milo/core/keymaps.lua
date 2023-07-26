@@ -6,6 +6,7 @@ local keymap = vim.keymap
 keymap.set('n', '<leader>w', ':w<CR>',{noremap = true})
 keymap.set('n', '<leader>q', ':q<CR>',{noremap = true})
 keymap.set('n', '<leader>wq', ':wq<CR>',{noremap = true})
+keymap.set('n', '<leader>fw', ':w!<CR>',{noremap = true})
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
@@ -53,12 +54,16 @@ vim.api.nvim_set_keymap('n', '<leader>d', '<Cmd>lua require("jedi").goto()<CR>',
 --TODO: add all keymap for python
 
 keymap.set("n", "<leader>gd", ":Lspsaga peek_definition<CR>")
-keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
+keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation<CR>")
 keymap.set("n", "<leader>hd", ":Lspsaga hover_doc<CR>")
-keymap.set("n", "<leader>gf", ":Lspsaga lsp_finder<CR>")
+keymap.set("n", "<leader>gf", ":Lspsaga finder<CR>")
 keymap.set("n", "<leader>ca", ":Lspsaga code_action<CR>")
 keymap.set("n", "<leader>d", ":Lspsaga show_cursor_diagnostics<CR>")
 keymap.set("n", "[d", ":Lspsaga diagnostic_jump_prev<CR>")
 
 --Ctrl O to jump back to the previous (older) location.
 --Ctrl I same as Tab) to jump forward to the next (newer) location
+
+
+
+

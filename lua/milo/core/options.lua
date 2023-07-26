@@ -18,3 +18,6 @@ opt.swapfile = false
 
 -- clipboard 
 opt.clipboard:append("unnamedplus")
+
+-- indentation
+vim.g['python_pep8_indent_enabled'] = 1
