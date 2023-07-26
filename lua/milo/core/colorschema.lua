@@ -1,8 +1,10 @@
 --local status, _ = pcall(vim.cmd, "colorscheme vscode")
-local status, _ = pcall(vim.cmd, "colorscheme codedark")
+--local status, _ = pcall(vim.cmd, "colorscheme codedark")
 --local status, _ = pcall(vim.cmd, "colorscheme dracula")
 --local status, _ = pcall(vim.cmd, "colorscheme gruvbox-material")
---local status, _ = pcall(vim.cmd, "colorscheme catppuccin-mocha")
+local status, _ = pcall(vim.cmd, "colorscheme catppuccin-mocha")
+--local status, _ = pcall(vim.cmd, "colorscheme tokyonight-night")
+--vim.cmd[[colorscheme tokyonight-night]]
 -- Lua
 --vim.cmd[[colorscheme vscode]]
 
