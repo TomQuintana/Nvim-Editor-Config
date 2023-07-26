@@ -58,6 +58,12 @@ require("nvim-web-devicons").set_icon {
     cterm_color = "65",
     name = "TS"
   },
+  ["sol"] = {
+    icon = "",
+    color = "#515D70",
+    cterm_color = "74",
+    name = "Solidity"
+  },
 }
 
 require("nvim-web-devicons").set_default_icon('', '#41535b')
@@ -66,3 +72,4 @@ require("nvim-web-devicons").set_default_icon('', '#e37933')
 require("nvim-web-devicons").set_default_icon('js', '#cbcb41')
 require("nvim-web-devicons").set_default_icon('', '#6d8086')
 require("nvim-web-devicons").set_default_icon(' ', '#519aba')
+require("nvim-web-devicons").set_default_icon('󰞻', '#519aba')
