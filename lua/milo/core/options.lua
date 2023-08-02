@@ -6,9 +6,12 @@ opt.number = true
 
 -- tabs & indentation 
 opt.tabstop = 2
+vim.autoindent = true
+vim.opt.smartindent = true
 opt.shiftwidth = 2
 opt.expandtab = true
-opt.autoindent = true
+vim.shiftwidth = 2
+vim.wrap = false -- No Wrap lines
 
 -- line wrapping
 opt.wrap = true
@@ -21,3 +24,5 @@ opt.clipboard:append("unnamedplus")
 
 -- indentation
 vim.g['python_pep8_indent_enabled'] = 1
+
+vim.opt.title = true

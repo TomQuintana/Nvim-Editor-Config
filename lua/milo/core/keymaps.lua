@@ -53,8 +53,8 @@ vim.api.nvim_set_keymap('n', '<leader>d', '<Cmd>lua require("jedi").goto()<CR>',
 
 --TODO: add all keymap for python
 
-keymap.set("n", "<leader>gd", ":Lspsaga peek_definition<CR>")
-keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation<CR>")
+keymap.set("n", "<leader>gd", ":Lspsaga goto_definition<CR>")
+--keymap.set("n", "<leader>gi", ":Lspsaga goto_type_definition<CR>")
 keymap.set("n", "<leader>hd", ":Lspsaga hover_doc<CR>")
 keymap.set("n", "<leader>gf", ":Lspsaga finder<CR>")
 keymap.set("n", "<leader>ca", ":Lspsaga code_action<CR>")
@@ -64,6 +64,10 @@ keymap.set("n", "[d", ":Lspsaga diagnostic_jump_prev<CR>")
 --Ctrl O to jump back to the previous (older) location.
 --Ctrl I same as Tab) to jump forward to the next (newer) location
 
-
+-- window management
+keymap.set("n", "<leader>vs", "<C-w>v") -- split window vertically
+keymap.set("n", "<leader>hs", "<C-w>s") -- split window horizontally
+keymap.set("n", "<leader>es", "<C-w>=") -- make split windows equal width & height
+keymap.set("n", "<leader>xs", ":close<CR>") -- close current split window
 
 
