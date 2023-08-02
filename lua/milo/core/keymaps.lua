@@ -30,8 +30,8 @@ keymap.set("n", "<leader>a", ":BufferLineCyclePrev<CR>")
 keymap.set("n", "<leader>bf", ":BufferLinePickClose<CR>")
 
 -- Markdow preview
-keymap.set("n", "<leader>mp", ":Glow<CR>")
-keymap.set("n", "<leader>mc", ":Glow!<CR>")
+keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
+keymap.set("n", "<leader>mc", ":MarkdownPreviewStop<CR>")
 
 --TODO: add keymaps for mergetool 
 
@@ -50,8 +50,6 @@ keymap.set("n", "<leader>df", ":VGit buffer_diff_preview<CR>")
 
 -- Python
 vim.api.nvim_set_keymap('n', '<leader>d', '<Cmd>lua require("jedi").goto()<CR>', { noremap = true, silent = true })
-
---TODO: add all keymap for python
 
 keymap.set("n", "<leader>gd", ":Lspsaga goto_definition<CR>")
 --keymap.set("n", "<leader>gi", ":Lspsaga goto_type_definition<CR>")
