@@ -4,7 +4,7 @@
 [![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=Lua&logoColor=white&labelColor=101010)]()
 
 
-## Structure
+## Project Structure
 ``` bash
 |-- lua/
 |   |-- milo/ 
@@ -21,14 +21,14 @@
 
 ```
 
-## How to use
+<h2 align='center'> How to use </h2>
 
 **init.lua** - Is the principal file in where import all modules
 
 **lua/milo** - This folder contain a core and plugs folder and the plugin-setup file
 
-#### Core folder
-- This folder contain: 
+<h3>Core folder</h3>
+
 ```bash
 |-- colorschema.lua
 |-- keymaps.lua
@@ -41,8 +41,16 @@
 
 **options** - In this folder the editor options are housed, such as - the column number or the indentation. 
 
-#### Plugs
+<h3>Plugs</h3>
 This folder contains the lsp files and the other plugs
 
-#### Plugin-setup
+```bash
+|-- lsp/
+|-- other_plugs.lua
+```
+**lsp** - This folder contains all configuration of LSP Client 
+
+**other_plugs** - configuration files of all non-lsp plugins are generated
+
+<h3>Plugin-setup</h3>
 In this file all the plugins that are considered necessary are imported
