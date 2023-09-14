@@ -1,9 +1,7 @@
-local status, _ = pcall(vim.cmd, "colorscheme vscode")
+--local status, _ = pcall(vim.cmd, "colorscheme vscode")
+local status, _ = pcall(vim.cmd, "colorscheme tccs")
 --local status, _ = pcall(vim.cmd, "colorscheme codedark")
---local status, _ = pcall(vim.cmd, "colorscheme dracula")
---local status, _ = pcall(vim.cmd, "colorscheme gruvbox-material")
 --local status, _ = pcall(vim.cmd, "colorscheme catppuccin-mocha")
---local status, _ = pcall(vim.cmd, "colorscheme tokyonight-night")
 --vim.cmd[[colorscheme tokyonight-night]]
 -- Lua
 --vim.cmd[[colorscheme vscode]]
@@ -47,8 +45,13 @@ vim.cmd [[highlight rainbowcol3 guifg=#f38ba8]]
 vim.cmd [[highlight TodofgTODO guifg=#f9e2af ]]
 vim.cmd [[highlight TodoBgTODO gui=bold guifg=#000000 guibg=#f9e2af ]]
 vim.cmd [[highlight TodoSignTODO guifg=#f9e2af]]
+
 vim.cmd [[highlight @operator guifg=#89b4fa ]] -- {req, res}
 
+-- Colors of QUESTION comment
+vim.cmd [[highlight TodofgQUESTION guifg=#FB892F ]]
+vim.cmd [[highlight TodoBgQUESTION gui=bold guifg=#F3F3F3 guibg=#FB892F ]]
+vim.cmd [[highlight TodoSignQUESTION guifg=#FB892F]]
 
 --change color of diagnostic icon error
 vim.cmd [[highlight DiagnosticSignError guifg=#E84153 ]]
@@ -57,3 +60,15 @@ vim.cmd [[highlight DiagnosticSignError guifg=#E84153 ]]
 vim.cmd [[highlight NvimTreeFolderIcon guifg=#E5BE30]]
 vim.cmd [[highlight NvimTreeIndentMarker guifg=#c7d0d7]]
 vim.cmd [[highlight NvimTreeCursorLine guifg=#8FECFC]]
+
+vim.cmd [[highlight LineNr guifg=#CCC5C5]]
+
+vim.cmd [[highlight BufferLineInfoDiagnosticSelected guifg=#FB892F ]]
+vim.cmd [[highlight BufferLineInfoSelected guifg=#FB892F ]]
+
+vim.cmd [[highlight BufferLineHintDiagnosticSelected guifg=#FB892F ]]
+vim.cmd [[highlight BufferLineHintSelected guifg=#FB892F ]]
+
+vim.cmd [[highlight NvimTreeLspDiagnosticsHint guifg=#FB892F ]]
+vim.cmd [[highlight DiagnosticSignHint guifg=#FB892F ]]
+vim.cmd [[highlight SagaText guifg=#FB892F ]]
