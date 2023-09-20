@@ -26,3 +26,14 @@ opt.clipboard:append("unnamedplus")
 vim.g['python_pep8_indent_enabled'] = 1
 
 vim.opt.title = true
+
+vim.g.rainbow_delimiters = {
+  highlight = {
+    "RainbowDelimiterYellow",
+    "RainbowDelimiterBlue",
+    "RainbowDelimiterOrange",
+    "RainbowDelimiterGreen",
+    "RainbowDelimiterViolet",
+    "RainbowDelimiterCyan",
+  },
+}
