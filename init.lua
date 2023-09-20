@@ -20,4 +20,3 @@ require("milo.plugs.todo-comments")
 require("milo.plugs.trouble")
 require("milo.plugs.icons")
 require("milo.plugs.merge-conflict") --NOTE: see cause of conflict
---require("milo.plugs.markdown-preview")
