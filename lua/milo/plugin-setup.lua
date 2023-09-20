@@ -37,8 +37,11 @@ return packer.startup(function(use)
   use('mofiqul/vscode.nvim')
   use('maxmx03/dracula.nvim')
   use('tomasiser/vim-code-dark')
-  use "EdenEast/nightfox.nvim"
   use('folke/tokyonight.nvim')
+  use('tiyn/tccs.nvim')
+
+  -- rainbow brackets
+--  use("HiPhish/rainbow-delimiters.nvim")
 
   -- Indentantion for Python
   --use('smbl64/vim-black-macchiato')
@@ -161,6 +164,13 @@ use('windwp/nvim-ts-autotag')
   use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
   --use ('davidhalter/jedi-vim')
+
+  -- rainbow
+  use('HiPhish/rainbow-delimiters.nvim')
+
+  -- Test
+  use('tpope/vim-fugitive')
+  use('rbong/vim-flog')
 
   if packer_bootstrap then
     require("packer").sync()
