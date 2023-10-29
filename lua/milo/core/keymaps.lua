@@ -16,7 +16,7 @@ keymap.set('n', '<leader>fb', builtin.buffers, {})
 
 -- Telescope find .env files
 -- NOTE: in the future join this config with telescope.set()
-keymap.set('n', '<leader>fh', ":Telescope file_browser hidden=true<CR>")
+--keymap.set('n', '<leader>fh', ":Telescope file_browser hidden=true<CR>")
 
 -- NerdTree 
 keymap.set("n", "<leader>nt", ":NvimTreeFindFileToggle<CR>") --  go to previous tab
@@ -69,3 +69,7 @@ keymap.set("n", "<leader>vs", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>hs", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>es", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>xs", ":close<CR>") -- close current split window
+
+keymap.set('n', '<leader>jj', ':normal 20j<CR>')
+keymap.set('n', '<leader>kk', ':normal 20k<CR>')
+

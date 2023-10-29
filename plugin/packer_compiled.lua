@@ -169,11 +169,6 @@ _G.packer_plugins = {
     path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
-  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -234,6 +229,16 @@ _G.packer_plugins = {
     path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rainbow-delimiters.nvim"] = {
+    loaded = true,
+    path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
+    url = "https://github.com/HiPhish/rainbow-delimiters.nvim"
+  },
+  ["tccs.nvim"] = {
+    loaded = true,
+    path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/tccs.nvim",
+    url = "https://github.com/tiyn/tccs.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -269,6 +274,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
+  },
+  ["vim-flog"] = {
+    loaded = true,
+    path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/vim-flog",
+    url = "https://github.com/rbong/vim-flog"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/tomquintana/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-surround"] = {
     loaded = true,

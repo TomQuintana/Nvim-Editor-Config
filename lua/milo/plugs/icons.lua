@@ -46,6 +46,12 @@ require("nvim-web-devicons").set_icon {
     cterm_color = "65",
     name = "Eslint"
   },
+  [".lintstagedrc"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "65",
+    name = "Makefile"
+  },
   ["Makefile"] = {
     icon = "",
     color = "#6d8086",
@@ -73,6 +79,6 @@ require("nvim-web-devicons").set_default_icon('js', '#cbcb41')
 require("nvim-web-devicons").set_default_icon('', '#6d8086')
 require("nvim-web-devicons").set_default_icon(' ', '#519aba')
 require("nvim-web-devicons").set_default_icon('󰞻', '#519aba')
-require("nvim-web-devicons").set_default_icon('', '#519aba')
+--require("nvim-web-devicons").set_default_icon('', '#519aba')
 --require("nvim-web-devicons").set_default_icon('', '#519aba')
 

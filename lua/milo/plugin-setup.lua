@@ -33,12 +33,12 @@ return packer.startup(function(use)
   use("wbthomason/packer.nvim")
 
   -- Theme
-  use("catppuccin/nvim")
   use('mofiqul/vscode.nvim')
   use('maxmx03/dracula.nvim')
   use('tomasiser/vim-code-dark')
   use('folke/tokyonight.nvim')
   use('tiyn/tccs.nvim')
+  use('gmr458/dark_modern.nvim')
 
   -- rainbow brackets
 --  use("HiPhish/rainbow-delimiters.nvim")
@@ -62,7 +62,7 @@ use('windwp/nvim-ts-autotag')
 
   -- Telescope
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
