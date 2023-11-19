@@ -92,7 +92,10 @@ lspconfig["lua_ls"].setup({
 })
 
 --lspconfig.jedi_language_server.setup{}
-lspconfig.pyright.setup{}
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 
 -- configure css server
 require'lspconfig'.cssmodules_ls.setup{}

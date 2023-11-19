@@ -67,10 +67,12 @@ nvimtree.setup({
   	-- 	enable= true,
   	-- },
   --highlight_git = false,
-  git = {
-    enable = true,
-    ignore = false
-  },
+  -- filters = {
+  --       custom = { ".DS_Store", "node_modules/" },
+  --     },
+      git = {
+        ignore = false,
+      },
 
   update_focused_file = {
     enable = true,

@@ -39,6 +39,8 @@ return packer.startup(function(use)
   use('folke/tokyonight.nvim')
   use('tiyn/tccs.nvim')
   use('gmr458/dark_modern.nvim')
+  use('sainnhe/gruvbox-material')
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- rainbow brackets
 --  use("HiPhish/rainbow-delimiters.nvim")
@@ -168,8 +170,10 @@ use('windwp/nvim-ts-autotag')
   -- rainbow
   use('HiPhish/rainbow-delimiters.nvim')
 
+  -- Git signs
+  use("lewis6991/gitsigns.nvim")
+
   -- Test
-  use('tpope/vim-fugitive')
   use('rbong/vim-flog')
 
   if packer_bootstrap then
