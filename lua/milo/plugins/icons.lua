@@ -1,4 +1,7 @@
-require("nvim-web-devicons").set_icon {
+return {
+  "nvim-web-devicons",
+  config = function ()
+ require("nvim-web-devicons").set_icon {
   [".gitignore"] = {
     icon = "",
     color = "#F9F2F2",
@@ -81,4 +84,5 @@ require("nvim-web-devicons").set_default_icon(' ', '#519aba')
 require("nvim-web-devicons").set_default_icon('󰞻', '#519aba')
 --require("nvim-web-devicons").set_default_icon('', '#519aba')
 --require("nvim-web-devicons").set_default_icon('', '#519aba')
-
+  end
+}
