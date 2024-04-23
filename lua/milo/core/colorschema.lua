@@ -57,6 +57,9 @@ vim.cmd [[highlight NvimTreeFolderIcon guifg=#E5BE30]]
 vim.cmd [[highlight NvimTreeFolderName guifg=#F6FCFE]]
 vim.cmd [[highlight NvimTreeIndentMarker guifg=#E5BE30]]
 vim.cmd [[highlight NvimTreeCursorLine guifg=#8FECFC]]
+
+
+vim.cmd [[highlight @Parameter guifg=#9cdefe]] --Ej: console
 --
 -- --vim.cmd [[highlight NvimTreeNormal guifg=#8FECFC]]
 -- --

@@ -26,7 +26,7 @@ return {
       keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
       opts.desc = "Show LSP definitions"
-      keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+      keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>", opts) -- show lsp definitions
 
       keymap.set("n", "<leader>gf", ":Lspsaga finder<CR>")
 
