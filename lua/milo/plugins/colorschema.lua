@@ -76,10 +76,10 @@ return {
     vim.cmd('colorscheme vscode')
     --vim.cmd('colorscheme tokyonight')
     -- change color for arrows in tree to light blue
-    vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
-    vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
-
-    -- -- Folder of nerdtree
+    -- vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
+    -- vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
+    --
+    -- -- -- Folder of nerdtree
     vim.cmd [[highlight NvimTreeFolderIcon guifg=#E5BE30]]
     vim.cmd [[highlight NvimTreeFolderName guifg=#DCDFF2]]
     vim.cmd [[highlight NvimTreeFolderNew guifg=#DCDFF2]]
