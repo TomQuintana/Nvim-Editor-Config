@@ -80,9 +80,9 @@ return {
 
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
-      capabilities = capabilities,
       on_attach = on_attach,
-    })
+      filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+      cmd = { "typescript-language-server", "--stdio" }    })
 
     -- configure css server
     lspconfig["cssls"].setup({
@@ -96,6 +96,10 @@ return {
       on_attach = on_attach,
     })
 
+    lspconfig["clangd"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
 
     -- configure prisma orm server
     lspconfig["prismals"].setup({
@@ -114,18 +118,19 @@ return {
     lspconfig["pyright"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      --filetypes = { "cpp" },
     })
 
-    lspconfig["solidity"].setup({
-      filetypes = { 'solidity', 'sol' },
-      cmd = {'nomicfoundation-solidity-language-server', '--stdio'},
-    })
+    -- lspconfig["solidity"].setup({
+    --   filetypes = { 'solidity', 'sol' },
+    --   cmd = {'nomicfoundation-solidity-language-server', '--stdio'},
+    -- })
     --    require'lspconfig'.solidity_ls_nomicfoundation.setup({
- --      cmd = { 'nomicfoundation-solidity-language-server', '--stdio' },
-	-- filetypes = { 'solidity' },
-	-- root_dir = require("lspconfig.util").find_git_ancestor,
-	-- single_file_support = true,
- --    })
+    --      cmd = { 'nomicfoundation-solidity-language-server', '--stdio' },
+    -- filetypes = { 'solidity' },
+    -- root_dir = require("lspconfig.util").find_git_ancestor,
+    -- single_file_support = true,
+    --    })
 
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
