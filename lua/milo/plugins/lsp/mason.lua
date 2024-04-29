@@ -29,13 +29,11 @@ return {
       ensure_installed = {
         "tsserver",
         "html",
-        "cssls",
         "tailwindcss",
         "lua_ls",
-        "graphql",
         "prismals",
         "pyright",
-        "solidity",
+        "clangd"
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -45,9 +43,8 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "isort", -- python formatter
         "black", -- python formatter
-        "pylint", -- python linter
+        "ruff", -- python linter
         "eslint_d", -- js linter
       },
     })
