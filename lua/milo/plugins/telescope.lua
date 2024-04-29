@@ -13,15 +13,14 @@ return {
     local actions = require("telescope.actions")
 
     telescope.setup({
-      extensions = {
-        file_browser = {
-          theme = "dropdown",
-          initial_mode = "normal",
-          hijack_netrw = true,
-        },
-        
-      },
       defaults = {
+        theme = 'center',
+        layout_config = {
+          horizontal = {
+            prompt_position = "top",
+            preview_width = 0.3,
+          },
+        },
         path_display = { "truncate " },
         mappings = {
           i = {
@@ -29,6 +28,13 @@ return {
             ["<C-j>"] = actions.move_selection_next,
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
+        },
+      },
+      extensions = {
+        file_browser = {
+          theme = "dropdown",
+          initial_mode = "normal",
+          hijack_netrw = true,
         },
       },
     })
@@ -58,5 +64,6 @@ return {
     --keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>fp", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<cr>", { desc = "Find all todos" })
+    keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter <cr>", { desc = "Find all todos" })
   end,
 }
