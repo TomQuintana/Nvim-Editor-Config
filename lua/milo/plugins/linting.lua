@@ -6,7 +6,7 @@ return {
     local lint = require("lint")
 
     local function pylint_condition()
-      local files = { ".pylintrc" , "pylint.json" }
+      local files = { ".pylintrc" , "pylint.json", ".ruff.toml" }
       for _, file in ipairs(files) do
         if vim.fn.filereadable(file) == 1 then
           return true
@@ -30,7 +30,7 @@ return {
       typescript = { "eslint_d" },
       javascriptreact = { "eslint_d" },
       typescriptreact = { "eslint_d" },
-      python = { "pylint" },
+      python = { "ruff" },
     }
 
     
