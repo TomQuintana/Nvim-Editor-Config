@@ -22,6 +22,8 @@ return {
       opts.desc = "Show LSP references"
       keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
+      keymap.set("n", "fd", "<cmd>Lspsaga peek_definition<CR>", opts)
+
       opts.desc = "Go to declaration"
       keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
@@ -102,24 +104,38 @@ return {
     })
 
     -- configure prisma orm server
-    lspconfig["prismals"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    -- lspconfig["prismals"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
 
     -- configure graphql language server
-    lspconfig["graphql"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-    })
+    -- lspconfig["graphql"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    --   filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    -- })
 
     -- configure python server
     lspconfig["pyright"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      --filetypes = { "cpp" },
     })
+
+    -- lspconfig.ruff_lsp.setup({
+    --   on_attach = on_attach,
+    --   capabilities = capabilities,
+    --   init_options = {
+    --     settings = {
+    --       args = { "--line-length=120" },
+    --     },
+    --   },
+    -- })
+ -- configure python server
+    -- lspconfig["ruff_lsp"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
 
     -- lspconfig["solidity"].setup({
     --   filetypes = { 'solidity', 'sol' },
