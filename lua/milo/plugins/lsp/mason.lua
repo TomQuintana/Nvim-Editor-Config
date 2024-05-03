@@ -25,27 +25,30 @@ return {
     })
 
     mason_lspconfig.setup({
-      -- list of servers for mason to install
+
+      -- lsp servers
       ensure_installed = {
         "tsserver",
         "html",
         "tailwindcss",
         "lua_ls",
-        "prismals",
-        "pyright",
+        --"pyright",
+        "ruff_lsp",
         "clangd"
       },
+
       -- auto-install configured servers (with lspconfig)
-      automatic_installation = true, -- not the same as ensure_installed
+      automatic_installation = true,
     })
 
+    -- linters and formatting
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier", -- prettier formatter
-        "stylua", -- lua formatter
-        "black", -- python formatter
-        "ruff", -- python linter
-        "eslint_d", -- js linter
+        "prettier",
+        "stylua",
+        "black",
+        "ruff",
+        "eslint_d",
       },
     })
   end,
