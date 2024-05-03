@@ -14,13 +14,10 @@ return {
 
     telescope.setup({
       defaults = {
-        theme = 'center',
-        layout_config = {
-          horizontal = {
-            prompt_position = "top",
-            preview_width = 0.3,
-          },
-        },
+        sorting_strategy = "ascending",
+        layout_strategy = "horizontal",
+        layout_config = { prompt_position = "top" },
+        border = true,
         path_display = { "truncate " },
         mappings = {
           i = {
@@ -32,16 +29,16 @@ return {
       },
       extensions = {
         file_browser = {
-          theme = "dropdown",
+          previewer = true,
+          gitsings = false,
           initial_mode = "normal",
-          hijack_netrw = true,
+          layout_config = { height = 20 },
         },
       },
     })
 
     telescope.load_extension("fzf")
     telescope.load_extension "file_browser"
-   -- telescope.load_extension "ui-select"
 
     local keymap = vim.keymap
 
