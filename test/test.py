@@ -1,3 +1,4 @@
+
 class User:
     def __init__(self, username, email):
         self.username = username
@@ -9,3 +10,4 @@ class User:
 # Example Usage
 user1 = User("JohnDoe", "johndoe@example.com")
 print(user1)
+

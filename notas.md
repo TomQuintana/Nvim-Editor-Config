@@ -141,3 +141,8 @@ return {
 
 ### Ver todos los eventos
 : h events
+
+### Mason - is for manage lsp server, linters and daps
+### Lsp - es paara manejar los language server
+### "hrsh7th/cmp-nvim-lsp" - utilizando el lsp server este plugin genera autocompletion
+### "WhoIsSethDaniel/mason-tool-installer.nvim" - es para auto instalar los linters, formatting and dap

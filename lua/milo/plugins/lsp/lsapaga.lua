@@ -15,6 +15,11 @@ return {
           normal_bg = "#022746",
         },
       },
+      code_action_lightbulb = {
+        enable = false,
+        sign = false,
+        virtual_text = false,
+      },
     })
   end
 }

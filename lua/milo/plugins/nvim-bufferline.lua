@@ -24,9 +24,9 @@ return {
 
     local keymap = vim.keymap -- for conciseness
 
-    keymap.set("n", "<leader>s", ":BufferLineCycleNext<CR>")
-    keymap.set("n", "<leader>a", ":BufferLineCyclePrev<CR>")
-    keymap.set("n", "<leader>bf", ":BufferLinePickClose<CR>")
+    keymap.set("n", "<leader>s", "<cmd>BufferLineCycleNext<CR>")
+    keymap.set("n", "<leader>a", "<cmd>BufferLineCyclePrev<CR>")
+    keymap.set("n", "<leader>bf", "<cmd>BufferLinePickClose<CR>")
 
   end,
 }

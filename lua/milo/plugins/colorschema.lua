@@ -1,18 +1,18 @@
 return {
- 'Mofiqul/vscode.nvim',
+ --'Mofiqul/vscode.nvim',
   --'olimorris/onedarkpro.nvim',
   --'navarasu/onedark.nvim',
   --"bluz71/vim-moonfly-colors",
-  --"folke/tokyonight.nvim",
+  "folke/tokyonight.nvim",
   --"catppuccin/nvim",
 
   config = function()
     --local bg = "#212801"
     local bg = "#081101"
 
-   require('vscode').setup()
+   require('tokyonight').setup()
 
-   vim.cmd('colorscheme vscode')
+   vim.cmd('colorscheme tokyonight-night')
 
     -- -- -- Folder of nerdtree
     -- vim.cmd [[highlight NvimTreeFolderIcon guifg=#E5BE30]]

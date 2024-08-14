@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+
 local keymap = vim.keymap
 --TODO: how to close a buffer and jump to next
 
@@ -17,6 +18,15 @@ keymap.set("n", "<leader>hs", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>es", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>xs", ":close<CR>") -- close current split window
 
-keymap.set('n', '<leader>jj', ':normal 20j<CR>')
-keymap.set('n', '<leader>kk', ':normal 20k<CR>')
+keymap.set('n', '<leader>jj', '<cmd>normal 20j<CR>')
+keymap.set('n', '<leader>kk', '<cmd>normal 20k<CR>')
+
+-- errors handling
+keymap.set('n', '<leader>be', '<cmd>Lspsaga show_workspace_diagnostics<CR>')
+keymap.set('n', '<leader>le', '<cmd>Lspsaga show_buf_diagnostics<CR>')
+
+
+keymap.set('n', '<leader>kw', '<cmd>WhichKey<CR>')
+
+
 
