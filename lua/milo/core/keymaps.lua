@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 --TODO: how to close a buffer and jump to next
+--
+
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- general keys
 keymap.set('n', '<leader>w', '<cmd>w<CR>',{noremap = true})
@@ -25,8 +28,17 @@ keymap.set('n', '<leader>kk', '<cmd>normal 20k<CR>')
 keymap.set('n', '<leader>be', '<cmd>Lspsaga show_workspace_diagnostics<CR>')
 keymap.set('n', '<leader>le', '<cmd>Lspsaga show_buf_diagnostics<CR>')
 
-
+-- Whats do this code d
 keymap.set('n', '<leader>kw', '<cmd>WhichKey<CR>')
+keymap.set('n', '<leader>in', '<C-w>gg=G')
+
+
+keymap.set('n', '<leader>bc', '<cmd>BufferLineCloseOthers <CR>', { desc = "Close all buffers except current" })
+keymap.set("n", "<leader>ne", "<cmd>Telescope file_browser<cr>", { desc = "Find string under cursor in cwd" })
 
 
 
+keymap.set('n', '<leader>i', 'gg=G', { noremap = true, silent = true })
+
+keymap.set("n", "fd", "<cmd>Lspsaga peek_definition<CR>", { desc = "Close all buffers except current" })
+keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", { desc = "Close all buffers except current" }) -- show definition, references
