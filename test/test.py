@@ -8,4 +8,4 @@ class User:
 
 
 # Example Usage
-user1 = User("JohnDoe", "johndoe@example.com")
+user1 = User("user1", "")
