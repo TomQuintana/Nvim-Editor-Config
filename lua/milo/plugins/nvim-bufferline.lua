@@ -14,7 +14,7 @@ return {
           local s = " "
           for e, n in pairs(diagnostics_dict) do
             local sym = e == "error" and " "
-            or (e == "warning" and " " or " " )
+            or (e == "warning" and "" or " " )
             s = s .. n .. sym
           end
           return s
@@ -26,7 +26,6 @@ return {
 
     keymap.set("n", "<leader>s", "<cmd>BufferLineCycleNext<CR>")
     keymap.set("n", "<leader>a", "<cmd>BufferLineCyclePrev<CR>")
-    keymap.set("n", "<leader>bf", "<cmd>BufferLinePickClose<CR>")
-
+    --keymap.set("n", "<leader>bf", "<cmd>BufferLinePickClose<CR>")
   end,
 }

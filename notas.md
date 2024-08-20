@@ -146,3 +146,31 @@ return {
 ### Lsp - es paara manejar los language server
 ### "hrsh7th/cmp-nvim-lsp" - utilizando el lsp server este plugin genera autocompletion
 ### "WhoIsSethDaniel/mason-tool-installer.nvim" - es para auto instalar los linters, formatting and dap
+
+## Lsp saga config
+```lua
+
+return {
+  'nvimdev/lspsaga.nvim',
+  dependencies = {
+    'nvim-treesitter/nvim-treesitter', -- optional but recommended for better UI rendering
+    'nvim-tree/nvim-web-devicons',     -- optional for file icons
+  },
+  config = function()
+    local lspsaga = require('lspsaga')
+
+    lspsaga.setup({
+      ui = {
+        enable = false, -- Disables the custom UI provided by lspsaga
+        sign = false,   -- Disables signs in the UI
+        -- code_action = 'your icon' -- Uncomment and set an icon if you want custom icons for code actions
+      },
+      ignore = {
+        clients = {"tsserver"}, -- Ignores the tsserver LSP client
+        ft = {},                -- Add filetypes to ignore if necessary
+        actions_without_kind = false, -- Set to true if you want to ignore code actions without a specific kind
+      }
+    })
+  end,
+}
+```

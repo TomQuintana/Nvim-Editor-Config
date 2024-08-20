@@ -10,7 +10,8 @@ return {
     --local bg = "#212801"
     local bg = "#081101"
 
-   require('tokyonight').setup()
+   require('tokyonight').setup({
+    })
 
    vim.cmd('colorscheme tokyonight-night')
 
@@ -33,5 +34,6 @@ return {
     -- WarningMsg 
     vim.cmd [[ highlight WarningMsg guifg=#8FECFC ]]
     vim.cmd [[highlight @Parameter guifg=#9cdefe]] --Ej: console
+
   end
 }

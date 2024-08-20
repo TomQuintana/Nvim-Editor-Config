@@ -15,7 +15,7 @@ return {
     name = "Package"
   },
   ["test.js"] = {
-    icon = "ﭧ",
+    icon = "",
     color = "#F1E723",
     cterm_color = "65",
     name = "TestJS"
@@ -62,7 +62,7 @@ return {
     name = "Makefile"
   },
   ["ts"] = {
-    icon = "ﯤ",
+    icon = "",
     color = "#519aba",
     cterm_color = "65",
     name = "TS"
