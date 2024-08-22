@@ -42,6 +42,7 @@ keymap.set('n', '<leader>i', 'gg=G', { noremap = true, silent = true })
 
 keymap.set("n", "fd", "<cmd>Lspsaga peek_definition<CR>", { desc = "Close all buffers except current" })
 keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", { desc = "Close all buffers except current" }) -- show definition, references
+keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Close all buffers except current" }) -- show definition, references
 
 -- code actions
 keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action) -- see available code actions, in visual mode will apply to selection
