@@ -11,6 +11,9 @@ return {
     local bg = "#081101"
 
    require('vscode').setup({
+      on_colors = function(colors)
+        colors.bg = bg
+      end,
     })
 
    --vim.cmd('colorscheme tokyonight-night')

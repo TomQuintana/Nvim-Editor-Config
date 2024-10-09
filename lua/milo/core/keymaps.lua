@@ -14,6 +14,8 @@ keymap.set('n', '<leader>wq', '<cmd>wq<CR>',{noremap = true})
 keymap.set('n', '<leader>fw', ':w!<CR>',{noremap = true})
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("n", "<leader>nh", "<cmd>nohlsearch<CR>", { desc = "Remove search" })
+
 
 -- window management
 keymap.set("n", "<leader>vs", "<C-w>v") -- split window vertically
@@ -28,15 +30,9 @@ keymap.set('n', '<leader>kk', '<cmd>normal 20k<CR>')
 keymap.set('n', '<leader>be', '<cmd>Lspsaga show_workspace_diagnostics<CR>', {desc =  "Show workspace diagnostics" })
 keymap.set('n', '<leader>le', '<cmd>Lspsaga show_buf_diagnostics<CR>',{ desc =  "Show buffer diagnostics" })
 
--- Whats do this code d
-keymap.set('n', '<leader>kw', '<cmd>WhichKey<CR>')
-keymap.set('n', '<leader>in', '<C-w>gg=G')
-
 
 keymap.set('n', '<leader>bc', '<cmd>BufferLineCloseOthers <CR>', { desc = "Close all buffers except current" })
 keymap.set("n", "<leader>ne", "<cmd>Telescope file_browser<cr>", { desc = "Find string under cursor in cwd" })
-
-
 
 keymap.set('n', '<leader>i', 'gg=G', { noremap = true, silent = true })
 
@@ -57,6 +53,8 @@ keymap.set("n", "[d", vim.diagnostic.goto_prev ) -- jump to previous diagnostic 
 keymap.set("n", "]d", vim.diagnostic.goto_next ) -- jump to next diagnostic in buffer
 
 keymap.set("n", "K", vim.lsp.buf.hover ) -- show documentation for what is under cursor
+
+keymap.set("n", "<leader>tf", ":Telescope lsp_document_symbols<CR>", { desc = "Search function or methdos in file" })
 
 
 
