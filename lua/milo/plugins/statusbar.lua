@@ -90,7 +90,7 @@ return {
     ins_left {
       -- mode component
       function()
-        return ''
+        return '󰄛'
       end,
       color = function()
         -- auto change color according to neovims mode
@@ -121,11 +121,11 @@ return {
       padding = { right = 1 },
     }
 
-    ins_left {
-      'filename',
-      cond = conditions.buffer_not_empty,
-      color = { fg = colors.yellow, gui = 'bold' },
-    }
+    -- ins_left {
+    --   'filename',
+    --   cond = conditions.buffer_not_empty,
+    --   color = { fg = colors.yellow, gui = 'bold' },
+    -- }
 
     ins_left{
       'branch',
@@ -133,16 +133,16 @@ return {
       color = { fg = colors.violet, gui = 'bold' },
     }
 
-    ins_left{
-      'diagnostics',
-      sources = { 'nvim_diagnostic' },
-      symbols = { error = ' ', warn = ' ', info = ' ' },
-      diagnostics_color = {
-        color_error = { fg = colors.red },
-        color_warn = { fg = colors.yellow },
-        color_info = { fg = colors.cyan },
-      },
-    }
+    -- ins_left{
+    --   'diagnostics',
+    --   sources = { 'nvim_diagnostic' },
+    --   symbols = { error = ' ', warn = ' ', info = ' ' },
+    --   diagnostics_color = {
+    --     color_error = { fg = colors.red },
+    --     color_warn = { fg = colors.yellow },
+    --     color_info = { fg = colors.cyan },
+    --   },
+    -- }
 
 
     ins_left { 'location' }

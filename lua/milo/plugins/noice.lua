@@ -15,6 +15,7 @@ return {
     --
     },
   config = function()
+
     local noice = require("noice")
 
     noice.setup({
