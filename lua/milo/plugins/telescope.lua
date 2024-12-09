@@ -60,6 +60,7 @@ return {
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>fp", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<cr>", { desc = "Find all todos" })
-    keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter <cr>", { desc = "Find all todos" })
+    keymap.set("n", "<leader>tf", "<cmd>Telescope treesitter <cr>", { desc = "Find all todos" })
+    keymap.set("n", "<leader>ts", "<cmd>Telescope current_buffer_fuzzy_find <cr>", { desc = "Find string" })
   end,
 }

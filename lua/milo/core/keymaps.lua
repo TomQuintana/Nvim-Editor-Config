@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 
+
 local keymap = vim.keymap
 --TODO: how to close a buffer and jump to next
 --
@@ -12,8 +13,10 @@ keymap.set('n', '<leader>w', '<cmd>w<CR>',{noremap = true})
 keymap.set('n', '<leader>q', '<cmd>q<CR>',{noremap = true})
 keymap.set('n', '<leader>wq', '<cmd>wq<CR>',{noremap = true})
 keymap.set('n', '<leader>fw', ':w!<CR>',{noremap = true})
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
 keymap.set("n", "<leader>nh", "<cmd>nohlsearch<CR>", { desc = "Remove search" })
 
 
@@ -54,9 +57,11 @@ keymap.set("n", "]d", vim.diagnostic.goto_next ) -- jump to next diagnostic in b
 
 keymap.set("n", "K", vim.lsp.buf.hover ) -- show documentation for what is under cursor
 
-keymap.set("n", "<leader>tf", ":Telescope lsp_document_symbols<CR>", { desc = "Search function or methdos in file" })
+--keymap.set("n", "<leader>tf", ":Telescope lsp_document_symbols<CR>", { desc = "Search function or methdos in file" })
 
 
+vim.api.nvim_set_keymap('t', '<C-m>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<leader>e', '<CR>', { noremap = true, silent = true })
 
 
 

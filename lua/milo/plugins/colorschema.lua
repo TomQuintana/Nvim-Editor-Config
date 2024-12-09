@@ -3,14 +3,14 @@ return {
   --'olimorris/onedarkpro.nvim',
   --'navarasu/onedark.nvim',
   --"bluz71/vim-moonfly-colors",
-  --"folke/tokyonight.nvim",
+  -- "folke/tokyonight.nvim",
   --"catppuccin/nvim",
 
   config = function()
     --local bg = "#212801"
     local bg = "#081101"
 
-   require('vscode').setup({
+    require('vscode').setup({
       on_colors = function(colors)
         colors.bg = bg
       end,
@@ -32,12 +32,14 @@ return {
     vim.cmd [[hi TelescopeBorder guifg=#D9EDBF]]
 
     -- Markdown
-    vim.cmd [[hi @markup.heading.1.markdown cterm=bold gui=bold guifg=#41B06E]]
-    vim.cmd [[hi @markup.heading.2.markdown cterm=bold gui=bold guifg=#e0af68]]
-
-    -- WarningMsg 
+    -- vim.cmd [[hi @markup.heading.1.markdown cterm=bold gui=bold guifg=#41B06E]]
+    -- vim.cmd [[hi @markup.heading.2.markdown cterm=bold gui=bold guifg=#e0af68]]
+    --
+   -- WarningMsg 
     vim.cmd [[ highlight WarningMsg guifg=#8FECFC ]]
-    vim.cmd [[highlight @Parameter guifg=#9cdefe]] --Ej: console
+
+    vim.cmd [[highlight @variable.builtin guifg=#d86fc2 ]] --Ej: console
+-- 06be9a
 
   end
 }
