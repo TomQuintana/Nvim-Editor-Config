@@ -58,10 +58,3 @@ keymap.set("n", "]d", vim.diagnostic.goto_next ) -- jump to next diagnostic in b
 keymap.set("n", "K", vim.lsp.buf.hover ) -- show documentation for what is under cursor
 
 --keymap.set("n", "<leader>tf", ":Telescope lsp_document_symbols<CR>", { desc = "Search function or methdos in file" })
-
-
-vim.api.nvim_set_keymap('t', '<C-m>', '<C-\\><C-n>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('t', '<leader>e', '<CR>', { noremap = true, silent = true })
-
-
-
