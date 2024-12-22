@@ -47,7 +47,18 @@ return {
       end,
       ["pyright"] = function()
         lspconfig["pyright"].setup({
-          capabilities = capabilities,
+          --capabilities = capabilities,
+capabilities = capabilities,
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off", -- Cambiar a "basic" o "strict" si quieres más validaciones
+        diagnosticMode = "workspace", -- "openFiles" puede reducir errores
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+      },
+    },
+  },
         })
       end,
       ["pylsp"] = function()
