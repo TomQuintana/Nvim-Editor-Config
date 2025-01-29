@@ -45,6 +45,9 @@
 <h3>Plugs</h3>
 This folder contains the lsp files and the other plugs
 
+
+
+echo "📁 📄 ✏️ ⚠️ 💡 ❌ ➕ ➖"
 ```bash
 |-- lsp/
 |-- other_plugs.lua
@@ -55,3 +58,11 @@ This folder contains the lsp files and the other plugs
 
 <h3>Plugin-setup</h3>
 In this file all the plugins that are considered necessary are imported
+
+- [ ] Tarea 1: Sin completar
+- [x] Tarea 2: Completada
+- [ ] Tarea 3: Sin completar
+- [ ] Tarea 4: Sin completar
+
+
+# h1

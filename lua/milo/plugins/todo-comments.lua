@@ -69,7 +69,6 @@ return {
     local keymap = vim.keymap -- for conciseness
 
 
-    keymap.set("n", "<leader>td", "<cmd>TodoLocList:<CR>")
     -- Colors of TODO comment
     vim.cmd [[highlight TodofgTODO guifg=#f9e2af ]]
     vim.cmd [[highlight TodoBgTODO gui=bold guifg=#000000 guibg=#f9e2af ]]

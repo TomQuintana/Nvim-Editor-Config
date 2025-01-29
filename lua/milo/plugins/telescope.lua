@@ -48,6 +48,9 @@ return {
 						width = 0.9, -- Cambia el ancho del panel del file browser
 						height = 0.9, -- Cambia la altura del panel del file browser
 					},
+          icons = {
+            folder = "",
+          }
 				},
 			},
 		})

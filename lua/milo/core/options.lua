@@ -1,5 +1,13 @@
 local opt = vim.opt -- for conciseness
 
+vim.opt.title = true
+vim.opt.titlestring = "%{fnamemodify(getcwd(), ':t')}"
+
+
+
+-- vim.o.scroll = 3 -- Desplaza 3 líneas por scroll
+-- vim.o.scrolloff = 5 -- Mantiene 5 líneas de margen al final/inicio del archivo
+
 -- line numbers 
 opt.relativenumber = true
 opt.number = true
